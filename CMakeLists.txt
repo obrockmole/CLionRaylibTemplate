@@ -17,6 +17,3 @@ if (APPLE)
     target_link_libraries(${PROJECT_NAME} "-framework Cocoa")
     target_link_libraries(${PROJECT_NAME} "-framework OpenGL")
 endif()
-
-
-# "-DCMAKE_TOOLCHAIN_FILE=C:/Users/Owen Brockmole/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake"
