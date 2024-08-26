@@ -9,4 +9,10 @@
 ```shell
 vcpkg install raylib:x64-windows
 ```
-- Once the package is installed, you can run the project and start coding!
+- It is very important you update your CMake options under Settings -> Build, Execution, Development -> CMake. Under CMake options, you must link your vcpkg install directory using the `-DCMAKE_TOOLCHAIN_FILE` option.
+- The install location may be different but the default is your `user/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake` directory, so adding the following to the options list should work.
+```shell
+-DCMAKE_TOOLCHAIN_FILE=C:/Users/user/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake
+```
+> Please double check your vcpkg install location first.
+- Once the package is installed and the CMake options are properly set, you can run the project and start coding!
